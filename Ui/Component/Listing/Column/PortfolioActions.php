@@ -74,15 +74,6 @@ class PortfolioActions extends Column
                             ),
                             'label' => __('Edit')
                         ],
-                        'edit_image' => [
-                            'href' => $this->_urlBuilder->getUrl(
-                                "portfolio/image",
-                                [
-                                    'id' => $item['id']
-                                ]
-                            ),
-                            'label' => __('Edit Image')
-                        ],
                         'delete' => [
                             'href' => $this->_urlBuilder->getUrl(
                                 static::URL_PATH_DELETE,
