@@ -1,6 +1,6 @@
 <?php
 
-namespace AHT\Portfolio\Ui\Component\Listing\Column;
+namespace AHT\Portfolio\Ui\Component\Image\Column;
 
 use Magento\Framework\UrlInterface;
 use Magento\Framework\View\Element\UiComponentFactory;
@@ -10,7 +10,7 @@ use Magento\Ui\Component\Listing\Columns\Column;
 /**
  * @method AuthorActions setName($name)
  */
-class PortfolioActions extends Column
+class ImageActions extends Column
 {
     /**
      * Url path  to edit
@@ -73,15 +73,6 @@ class PortfolioActions extends Column
                                 ]
                             ),
                             'label' => __('Edit')
-                        ],
-                        'edit_image' => [
-                            'href' => $this->_urlBuilder->getUrl(
-                                "portfolio/image",
-                                [
-                                    'id' => $item['id']
-                                ]
-                            ),
-                            'label' => __('Edit Image')
                         ],
                         'delete' => [
                             'href' => $this->_urlBuilder->getUrl(
